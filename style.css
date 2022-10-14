@@ -1,0 +1,48 @@
+html {
+  margin: 0;
+}
+body {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  text-align: center;
+}
+a {
+  color: burlywood;
+  text-decoration: none;
+}
+.border {
+  border: 1pt solid black;
+}
+.textChange {
+  font-size: 30pt;
+  font-weight: bold;
+}
+.hidden {
+  visibility: hidden;
+}
+table {
+  border-radius: 5px;
+  background-color: darkgreen;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+tr > td {
+  border-left: 1pt solid greenyellow;
+  border-right: 1pt solid greenyellow;
+  border-top: 1pt dotted red;
+  border-bottom: 1pt dotted red;
+}
+tr > td:first-of-type {
+  border-left: 1pt dotted red;
+}
+tr > td:last-of-type {
+  border-right: 1pt dotted red;
+}
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
