@@ -34,7 +34,7 @@ for (let i = 0; i < tenStrings.length; i++) {
 
 //Ex 26
 
-/*const randomArray = [];
+const randomArray = [];
 
 for (let i = 0; i < 100; i++) {
   const newNum = Math.floor(Math.random() * 101);
@@ -49,7 +49,7 @@ const findMaxMin = () => {
   console.log("The Maximum Number is " + Math.max(...randomArray));
 };
 
-findMaxMin();*/
+findMaxMin();
 
 //Ex 28
 
@@ -113,7 +113,7 @@ findBiggerValue([2, 2, 2], [2, 100]);
 //DOM Practice
 //EX 31
 
-/*const container = document.getElementById("container");
+const container = document.getElementById("container");
 
 //Ex 32
 
@@ -123,6 +123,7 @@ const td = document.querySelectorAll("td");
 
 //I made it so that this needs to be called with a function in the console...otherwise, it executes immediately
 // this one writes over what was previously there... I am sure that I could append a p child instead
+let p = document.createElement("p");
 
 const displayTdText = () => {
   for (let i = 0; i < td.length; i++) {
@@ -200,4 +201,6 @@ const emptyList = () => {
     li[i].remove();
   }
 };
-*/
+
+//Bonus!!!
+//Ex 41
