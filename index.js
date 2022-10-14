@@ -34,7 +34,7 @@ for (let i = 0; i < tenStrings.length; i++) {
 
 //Ex 26
 
-const randomArray = [];
+/*const randomArray = [];
 
 for (let i = 0; i < 100; i++) {
   const newNum = Math.floor(Math.random() * 101);
@@ -42,17 +42,78 @@ for (let i = 0; i < 100; i++) {
 }
 console.log(randomArray);
 
+//Ex 27
+
 const findMaxMin = () => {
   console.log("The minimun Number is " + Math.min(...randomArray));
   console.log("The Maximum Number is " + Math.max(...randomArray));
 };
 
-findMaxMin();
+findMaxMin();*/
+
+//Ex 28
+
+const mainArr = [];
+const minArr1 = [];
+const minArr2 = [];
+
+const getRandomNum = () => {
+  for (let i = 0; i < 10; i++) {
+    const numArr1 = Math.floor(Math.random() * 11);
+    const numArr2 = Math.floor(Math.random() * 11);
+    minArr1.push(numArr1);
+    minArr2.push(numArr2);
+  }
+  mainArr.push(minArr1, minArr2);
+  console.log(mainArr);
+};
+
+getRandomNum();
+
+//Ex 29
+
+const findLonger = (arr1, arr2) => {
+  const length1 = Math.max(arr1.length);
+  const length2 = Math.max(arr2.length);
+  if (length1 > length2) {
+    console.log("Array 1: [" + arr1 + "] is the longer Array");
+  } else {
+    console.log("Array 2: [" + arr2 + "] is the longer Array");
+  }
+  console.log("Array 1 has " + length1 + " values stored");
+  console.log("Array 2 has " + length2 + " values stored");
+};
+
+findLonger([1, 1, 3], [1, 5, 5, 7, 7, 9, 10]);
+
+//Ex 30
+
+const findBiggerValue = (arr1, arr2) => {
+  let sum = 0;
+  let sum2 = 0;
+  for (const value of arr1) {
+    sum += value;
+  }
+  for (const value of arr2) {
+    sum2 += value;
+  }
+  if (sum > sum2) {
+    console.log(
+      "The value of the first Array is greater with a total of: " + sum
+    );
+  } else {
+    console.log(
+      "The value of the second Array is greater with a total of: " + sum2
+    );
+  }
+};
+
+findBiggerValue([2, 2, 2], [2, 100]);
 
 //DOM Practice
 //EX 31
 
-const container = document.getElementById("container");
+/*const container = document.getElementById("container");
 
 //Ex 32
 
@@ -139,3 +200,4 @@ const emptyList = () => {
     li[i].remove();
   }
 };
+*/
